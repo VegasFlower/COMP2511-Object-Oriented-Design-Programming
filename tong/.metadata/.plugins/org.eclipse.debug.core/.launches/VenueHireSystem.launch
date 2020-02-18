@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ass1/src/unsw/venues/VenueHireSystem.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_STDIN_FILE" value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/19T2-cs2511-ass1/sample_input.json"/>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="unsw.venues.VenueHireSystem"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ass1"/>
+</launchConfiguration>

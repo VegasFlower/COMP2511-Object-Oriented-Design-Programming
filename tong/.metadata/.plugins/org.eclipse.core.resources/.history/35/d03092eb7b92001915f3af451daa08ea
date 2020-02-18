@@ -1,0 +1,26 @@
+package unsw.venues;
+
+import java.util.ArrayList;
+
+public class Booking {
+	private String id;
+	private Venue venue;
+	private ArrayList<Room> rooms;
+	
+	public Booking(String id, Venue venue) {
+		this.id = id;
+		this.venue = venue;
+	}
+
+	public String getId() {
+		return id;
+	}
+	
+	public Venue getVenue() {
+		return venue;
+	}
+
+	public ArrayList<Room> getRooms(){
+		return rooms;
+	}
+}

@@ -1,0 +1,59 @@
+package unsw.automata;
+
+
+public class GameOfLifeController {
+
+	private int sign = 1;
+	Timeline timeline;
+	
+    @FXML
+    private GridPane cell;
+    
+    @FXML
+    private Button play;
+    
+    private GameOfLife g;
+
+    public GameOfLifeController() {
+    	this.g = new GameOfLife();
+    	this.timeline = new Timeline();
+    	timeline.setCycleCount(Timeline.INDEFINITE);
+    	timeline.setAutoReverse(true);
+    	
+//    	KeyValue v = new KeyValue(sign, 1);
+//		KeyFrame k = new KeyFrame(Duration.ofMillis(500), v);
+//    	timeline.getKeyFrames().add(k);
+    	
+    	
+//    	timeline.play();
+
+    }
+
+    @FXML
+    public void handleTick(ActionEvent event) {
+    	g.tick();
+    }
+
+    @FXML
+    public void restart(ActionEvent event) {
+    	if(play.toString().equals("Play")) {
+    		sign = 0;
+    		timeline.play();
+    	}else {
+    		sign = 1;
+//    		timeline.stop();
+    	}
+    }
+    
+    @FXML
+    public void initialize() {
+    	for(int i=0;i<10;i++) {
+    		for(int j=0;j<10;j++) {
+    			CheckBox c = new CheckBox();
+    			this.cell.add(c,i,j);
+    			g.cellProperty(i,j).bindBidirectional(c.selectedProperty());
+    		}
+    	}
+    }
+}
+

@@ -1,0 +1,19 @@
+package staff.test;
+
+import java.time.LocalDate;
+
+import example.Lecturer;
+import example.StaffMember;
+
+public class StaffTest {
+	public static void main(String[] args) {
+		StaffMember a1 = new StaffMember("Tong", 6666, LocalDate.of(2019,6,13), LocalDate.of(2019,6,17));
+		System.out.println(printStaffDetails(a1));
+		StaffMember a2 = new Lecturer("Lane",8888,LocalDate.of(2019,6,13), LocalDate.of(2019,6,17),"Enggeering","A");
+		System.out.println(a2.toString());
+	}
+	
+	public static String printStaffDetails(StaffMember s) {
+		return s.toString();
+	}
+}

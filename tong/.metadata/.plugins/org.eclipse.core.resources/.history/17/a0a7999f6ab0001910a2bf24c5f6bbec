@@ -1,0 +1,136 @@
+/**
+ *
+ */
+package unsw.automata;
+
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+
+/**
+ * Conway's Game of Life on a 10x10 grid.
+ *
+ * @author Robert Clifton-Everest
+ *
+ */
+public class GameOfLife {
+
+	private BooleanProperty cell[][] = new BooleanProperty[10][10];
+//			= new BooleanProperty[10][10];
+	
+    public GameOfLife() {
+        // TODO At the start all cells are dead
+//    	this.cell = new SimpleBooleanProperty[10][10];
+    	for(int i = 0;i<10;i++) {
+    		for(int j = 0;j<10;j++) {
+    			cell[i][j] = new SimpleBooleanProperty();
+    			cell[i][j].setValue(false);
+//    			System.out.println(cell[i][j]);
+    		}
+    	}
+    }
+
+    public void ensureAlive(int x, int y) {
+        // TODO Set the cell at (x,y) as alive
+    	cell[x][y].setValue(true);
+    }
+
+    public void ensureDead(int x, int y) {
+        // TODO Set the cell at (x,y) as dead
+    	cell[x][y].setValue(false);
+    }
+
+    public boolean isAlive(int x, int y) {
+        // TODO Return true if the cell is alive
+		System.out.println(cell[x][y]);
+
+    	if(cell[x][y].getValue() == true) {
+    		return true;
+    	}
+        return false;
+    }
+    
+    public BooleanProperty cellProperty(int x, int y) {
+    	return cell[x][y];
+    }
+    
+    public void tick() {
+        // TODO Transition the game to the next generation.
+    	System.out.println("TEST!!!");
+    	BooleanProperty temp[][] = new BooleanProperty[10][10];
+    	for(int i = 0;i<10;i++) {
+    		for(int j = 0;j<10;j++) {
+    			temp[i][j] = new SimpleBooleanProperty();
+    			temp[i][j].setValue(false);
+    		}
+    	}
+    	for(int i = 0;i<10;i++) {
+    		for(int j = 0;j<10;j++) {
+    			int x = i;
+    			int y = j;
+    			int alive = 0;
+    			
+    			if(neighborStatus(x-1,y-1)) {
+    				alive++;
+    			}
+    			System.out.println(x);
+    			System.out.println(y);
+    			if(neighborStatus(x-1,y)) {
+    				alive++;	
+    			}
+    			if(neighborStatus(x-1,y+1)) {
+    				alive++;	
+    			}
+    			System.out.println(x);
+    			System.out.println(y);
+    			if(neighborStatus(x,y-1)) {
+    				alive++;	
+    			}
+    			if(neighborStatus(x,y+1)) {
+    				alive++;	
+    			}
+    			if(neighborStatus(x+1,y)) {
+    				alive++;	
+    			}
+    			if(neighborStatus(x+1,y+1)) {
+    				alive++;	
+    			}
+    			if(neighborStatus(x+1,y-1)) {
+    				alive++;	
+    			}
+    			
+    			if(alive < 2 && isAlive(i,j)) {
+    				temp[i][j].setValue(false);
+    			}
+//    			if((alive == 2 && isAlive(i,j)) || (alive == 3 && isAlive(i,j))) {
+//    				temp[i][j].set(true);
+//    			}
+    			if(alive > 3 && isAlive(i,j)) {
+    				temp[i][j].setValue(false);
+    			}
+    			if(alive == 3 && !isAlive(i,j)) {
+    				temp[i][j].setValue(true);
+    			}
+    		}
+    	}
+    	this.cell = temp;
+    	System.out.println("TEST!!!");
+
+    }
+
+    public Boolean neighborStatus(int x, int y) {
+    	if(x < 0) {
+    		x = x + 10;
+    	}
+    	if(y < 0) {
+    		y = y + 10;
+    	}
+    	if(x > 9) {
+    		x = x - 10;
+    	}
+    	if(y > 9) {
+    		y = y - 10;
+    	}
+    	
+    	return isAlive(x,y);
+    }
+}

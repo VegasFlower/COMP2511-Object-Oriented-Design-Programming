@@ -1,0 +1,45 @@
+package unsw.venues;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class Room {
+	private String name;
+	private String size;
+	private Venue venue;
+	private ArrayList<LocalDate> dates_occupied = new ArrayList<LocalDate>();
+	private ArrayList<Booking> room_bookings = new ArrayList<Booking>();
+	
+	public Room(String name, String size, Venue venue) {
+		this.name = name;
+		this.size = size;
+		this.venue = venue;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public Venue getVenue() {
+		return venue;
+	}
+	public String getSize() {
+		return size;
+	}
+	
+	public ArrayList<LocalDate> get_dates_occupied(){
+		return dates_occupied;
+	}
+	
+	public ArrayList<Booking> getRoomBookings(){
+		return room_bookings;
+	}
+	
+	public void addDates(LocalDate date) {
+		dates_occupied.add(date);
+	}
+	
+	public void addBooking(Booking booking) {
+		room_bookings.add(booking);
+	}
+}

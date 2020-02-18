@@ -1,0 +1,24 @@
+package unsw.enrolment;
+
+import java.util.ArrayList;
+
+public class Composite_mark implements Grade{
+
+	private String name;
+	private int total_mark;
+	private ArrayList<Grade> list = new ArrayList<Grade>();
+	
+	@Override
+	public boolean isPassing() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int totalMark() {
+		// TODO Auto-generated method stub
+		
+		return 0;
+	}
+
+}

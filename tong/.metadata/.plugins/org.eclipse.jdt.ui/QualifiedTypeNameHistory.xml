@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="unsw.enrolment.Session"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
+    <fullyQualifiedTypeName name="unsw.enrolment.Enrolment"/>
+    <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+    <fullyQualifiedTypeName name="unsw.enrolment.EnrolmentSystem"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="javax.swing.event.ChangeListener"/>
+    <fullyQualifiedTypeName name="javafx.beans.value.ChangeListener"/>
+    <fullyQualifiedTypeName name="javafx.beans.value.ObservableValue"/>
+    <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.CheckBox"/>
+    <fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
+    <fullyQualifiedTypeName name="com.sun.corba.se.impl.orbutil.graph.Node"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.BooleanProperty"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleBooleanProperty"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.io.TempDir"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="javafx.animation.KeyFrame"/>
+    <fullyQualifiedTypeName name="java.beans.EventHandler"/>
+    <fullyQualifiedTypeName name="javafx.animation.Timeline"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+</qualifiedTypeNameHistroy>

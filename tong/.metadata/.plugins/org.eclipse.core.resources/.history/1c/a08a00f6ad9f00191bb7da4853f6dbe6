@@ -1,0 +1,42 @@
+package unsw.enrolment;
+
+import java.util.ArrayList;
+
+public class Grade {
+    private int mark;
+    private String grade;
+    private ArrayList<Mark> marks = new ArrayList<Mark>();
+
+    public Grade() {
+    	this.mark = this.getTotalMark();
+    }
+    
+    public int getTotalMark() {
+    	int total = 0;
+    	for(Mark mark : marks) {
+    		total += mark.getMark();
+    	}
+    	return total;
+    }
+
+    
+    
+    public void getGrade() {
+        if (mark < 50)
+            grade = "FL";
+        else if (mark < 65)
+            grade = "PS";
+        else if (mark < 75)
+            grade = "DN";
+        else
+            grade = "HD";
+    }
+
+    public 
+    
+    public boolean isPassing() {
+        return mark >= 50;
+    }
+    
+    
+}

@@ -1,0 +1,17 @@
+package example;
+
+import java.time.LocalDate;
+
+/**
+ * A staff member
+ * @author Robert Clifton-Everest
+ *
+ */
+public class StaffMember {
+
+	public String name;
+	public int salary;
+	public LocalDate hire_date;
+	public LocalDate end_date;
+	
+}

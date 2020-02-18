@@ -1,0 +1,18 @@
+package unsw.movies;
+
+public class Classic implements Price{
+
+	@Override
+	public double getCharge(int daysRented) {
+		// TODO Auto-generated method stub
+		double charge;
+		if(daysRented <= 5) {
+			charge = 2;
+			return charge;
+		}else {
+			charge = 2;	
+			return charge + (daysRented - 5);
+		}
+	}
+
+}

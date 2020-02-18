@@ -1,0 +1,8 @@
+package unsw.enrolment;
+
+public interface Mark {
+	public int getMark();
+	public void addMark(Mark m);
+	public void removeMark(Mark m);
+	public int getAssign2Mark();
+}

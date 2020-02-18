@@ -1,0 +1,32 @@
+package unsw.venues;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class Booking {
+	private String id;
+	private ArrayList<Room> rooms = new ArrayList<Room>();
+	private ArrayList<LocalDate> dates = new ArrayList<LocalDate>();
+	
+	public Booking(String id, ArrayList<Room> rooms, ArrayList<LocalDate> dates) {
+		this.id = id;
+		this.rooms = rooms;
+		this.dates = dates;
+	}
+
+	public String getId() {
+		return id;
+	}
+	
+	public Venue getVenue() {
+		return this.rooms.get(0).getVenue();
+	}
+
+	public ArrayList<Room> getRooms(){
+		return rooms;
+	}
+	
+	public ArrayList<LocalDate> getDates(){
+		return dates;
+	}
+}

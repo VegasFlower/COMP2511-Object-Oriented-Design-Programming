@@ -1,0 +1,22 @@
+package unsw.movies;
+
+public class NewRelease implements Price {
+
+    @Override
+    public double getCharge(int daysRented) {
+        return daysRented * 3;
+    }
+
+	@Override
+	public void changePrice(Movie movie) {
+		// TODO Auto-generated method stub
+		movie.setPrice(new Regular());
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+
+}

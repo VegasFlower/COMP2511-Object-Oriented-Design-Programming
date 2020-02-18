@@ -1,0 +1,26 @@
+package unsw.venues;
+
+import java.util.ArrayList;
+
+public class Venue {
+	private String name;
+	private ArrayList<Room> rooms_venue;
+	
+	public Venue(String name) {
+		this.name = name;
+		rooms_venue = new ArrayList<Room>();
+	}
+
+	public void addRoom(Room room) {
+//		Room new_room = new Room(room, size);
+		rooms_venue.add(room);
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public ArrayList<Room> getRooms(){
+		return rooms_venue;
+	}
+}

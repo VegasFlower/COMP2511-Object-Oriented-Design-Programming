@@ -1,0 +1,5 @@
+package unsw.enrolment;
+
+public class Composite_mark implements Grade{
+
+}

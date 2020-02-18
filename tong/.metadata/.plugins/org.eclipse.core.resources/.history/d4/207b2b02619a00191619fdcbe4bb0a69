@@ -1,0 +1,42 @@
+package unsw.movies;
+
+public class Movie {
+    public static final int REGULAR = 0;
+    public static final int NEW_RELEASE = 1;
+    public static final int CHILDRENS = 2;
+    public static final int CLASSIC = 3;
+
+    private String title;
+    private Price price;
+
+    public Movie(String title, Price price) {
+        this.title = title;
+        this.price = price;
+    }
+
+    public void setPrice(Price arg) {
+        price = arg;
+    }
+
+    public Price getPrice() {
+    	return price;
+    }
+    
+    public void updatePrice() {
+    	if(price == new NewRelease()) {
+    		price.changePrice(this);
+    	}
+    	if(price == new Regular()) {
+    		price.changePrice(this);
+    	}
+    }
+    
+    public String getTitle() {
+        return title;
+    }
+
+    public double getCharge(int daysRented) {
+        return price.getCharge(daysRented);
+    }
+
+}

@@ -1,0 +1,60 @@
+package example;
+
+import java.time.LocalDate;
+
+/**
+ * A staff member
+ * @author Robert Clifton-Everest
+ *
+ */
+public class StaffMember {
+
+	public String name;
+	public int salary;
+	public LocalDate hire_date;
+	public LocalDate end_date;
+	
+	
+	public StaffMember(String name, int salary, LocalDate hire_date, LocalDate end_date) {
+		this.name = name;
+		this.salary = salary;
+		this.hire_date = hire_date;
+		this.end_date = end_date;
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Name: " + name +" Salary: " + salary + " Hire Date: "+ hire_date + " End Date: " + end_date;
+	}
+	
+	public int getSalary() {
+		return salary;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public boolean equals(Object o){
+		if(o == null) {
+			return false;
+		}
+		if (o instanceof StaffMember){
+			StaffMember s = (StaffMember)o;
+			if(s.name == this.name && s.salary == this.salary && s.hire_date==this.hire_date && s.end_date==this.end_date) {
+				return true;
+			}else {
+				return false;
+			}
+		} else {
+		return false;
+		}
+	}
+
+}
+

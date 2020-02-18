@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/19T2-tut07"/>
+		<item value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/19T2-cs2511-lab07"/>
+		<item value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/DungeonProject"/>
+		<item value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/19T2-cs2511-lab02"/>
+		<item value="/import/glass/2/z5142003/Desktop/2511/tong/19T2-cs2511-lab01"/>
+		<item value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/tong/19T2-cs2511-lab01"/>
+		<item value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/19T2-cs2511-lab01"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/tmp_amd/glass/export/glass/2/z5142003/Desktop/2511/tong/19T2-cs2511-lab01"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

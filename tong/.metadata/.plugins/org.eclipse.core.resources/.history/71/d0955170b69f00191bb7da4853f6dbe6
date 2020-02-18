@@ -1,0 +1,20 @@
+package unsw.enrolment;
+
+public class Individual_mark implements Mark{
+
+	private String name;
+	private int mark;
+	
+	public Individual_mark(String name, int mark) {
+		this.name = name;
+		this.mark = mark;
+	}
+
+	@Override
+	public int getMark() {
+		// TODO Auto-generated method stub
+		return mark;
+	}
+
+
+}

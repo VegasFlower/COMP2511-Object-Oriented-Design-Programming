@@ -1,0 +1,7 @@
+package unsw.movies;
+
+public interface Price {
+    public double getCharge(int daysRented);
+    public void changePrice(Movie movie);
+    public void toString();
+}

@@ -1,0 +1,27 @@
+package unsw.enrolment;
+
+public class AssignmentMark implements Mark {
+
+	@Override
+	public int getMark() {
+		// TODO Auto-generated method stub
+		int total = 0;
+		for (Mark mark : list) {
+			total = total + mark.getMark();
+		}
+		return total/(list.size());
+	}
+
+	@Override
+	public void addMark(Mark m) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeMark(Mark m) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

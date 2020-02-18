@@ -1,0 +1,19 @@
+package example;
+
+import java.time.LocalDate;
+
+public class Lecturer extends StaffMember {
+
+	
+	public String school;
+	public String academic_status;
+	
+	public Lecturer(String name, int salary, LocalDate hire_date, LocalDate end_date, String school, String academic_status) {
+		super(name, salary, hire_date, end_date);
+		// TODO Auto-generated constructor stub
+		this.school = school;
+		this.academic_status = academic_status;
+		
+	}
+
+}

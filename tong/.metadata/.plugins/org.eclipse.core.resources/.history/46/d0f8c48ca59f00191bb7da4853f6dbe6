@@ -1,0 +1,30 @@
+package unsw.enrolment;
+
+import java.util.ArrayList;
+
+public class Composite_mark implements Mark{
+
+	private String name;
+	private int total_mark;
+	private ArrayList<Grade> list = new ArrayList<Grade>();
+	
+
+	@Override
+	public int getMark() {
+		// TODO Auto-generated method stub
+		int total = 0;
+		for (Grade grade : list) {
+			total = total + grade.getMark();
+		}
+		return total;
+	}
+	
+	public void addGrade(Grade a) {
+		list.add(a);
+	}
+
+	public void removeGrade(Grade a) {
+		list.remove(a);
+	}
+	
+}
